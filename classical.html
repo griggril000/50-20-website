@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+        
+<head>
+  <title>Offline Music - Classical Music</title>
+  <link href="classical.css" rel="stylesheet">
+
+<meta name="theme-color" content="#8b4513">
+
+<style>
+      body {
+        font-size: 25px;
+        text-shadow: 4px 4px 4px #aaa;
+      }
+</style>
+
+<style type="text/css">
+
+#date-location {left: 15px; top: 0px; text-align: center; background-color: #FFFFFF; border: 1px solid #006699; padding: 0px; z-index: 2; }
+
+.date-font {color: #006699; font: 13px arial, sans-serif; font-weight: bold; }
+
+</style>
+
+<style>
+@font-face {
+    font-family: rocksalt;
+    src: url(RockSalt.ttf);
+}
+
+@font-face {
+    font-family: music;
+    src: url(music.ttf);
+}
+
+h1 {
+    font-family: music;
+}
+
+p {
+    font-family: music;
+}
+
+ul#menu {
+    font-family: music;
+}
+
+.date-font {
+    font-family: music;
+    font-size: 30px;
+}
+
+.music {
+    font-family: music;
+}
+
+</style>
+
+<link rel="icon"
+ href="violin.ico" /></head>
+<body>
+
+<nav id="nav01"></nav>
+
+<div id="main">
+
+<script type="text/javascript">
+// START DATE SCRIPT
+
+var showdate	= "yes"  	// SHOW THE DATE | yes | no |
+
+if (showdate == "yes") {
+document.write('<div id="date-location">');
+var d=new Date();
+var weekday=new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var monthname=new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+document.write('<span class="date-font">' + weekday[d.getDay()] + ', ');
+document.write(monthname[d.getMonth()] + ' ');
+document.write(d.getDate() + ', ');
+document.write(d.getFullYear())
+document.write('<br></span>')
+document.write('</div>');
+}
+</script>
+
+  <h1><a href="index.html"><img src="embed.png" alt="Offline Music"></a></h1>
+
+<p><FONT FACE="music, rocksalt, arial">Classical Music</FONT></p>
+
+<audio controls>
+  <source src="classical.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<a href="http://classical89.org/streaming/" target="_blank"><img src="http://mbmfiles.com/Sep2016/160918-BJSEElzf9R8J.jpg" alt='Create your own banner at mybannermaker.com!' border=0 /></a>
+
+  <footer id="foot01"></footer></FONT>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
