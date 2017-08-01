@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+        
+<head>
+  <title>Offline Music - Harry Potter</title>
+  <link href="hp.css" rel="stylesheet">
+
+<meta name="theme-color" content="#ffd700">
+
+<style>
+      body {
+        font-size: 25px;
+        text-shadow: 4px 4px 4px #aaa;
+      }
+</style>
+
+<style type="text/css">
+
+#date-location {left: 15px; top: 0px; text-align: center; background-color: #FFFFFF; border: 1px solid #006699; padding: 0px; z-index: 2; }
+
+.date-font {color: #006699; font: 13px arial, sans-serif; font-weight: bold; }
+
+</style>
+
+<style>
+
+@font-face {
+    font-family: hp;
+    src: url(harry_potter.ttf);
+}
+
+h1 {
+    font-family: hp;
+}
+
+p {
+    font-family: hp;
+}
+
+ul#menu {
+    font-family: hp;
+}
+
+.date-font {
+    font-family: hp;
+}
+
+.harry_potter {
+    font-family: hp;
+}
+
+</style>
+
+<link rel="icon"
+ href="hp.ico" /></head>
+<body>
+
+<nav id="nav01"></nav>
+
+<div id="main">
+
+<script type="text/javascript">
+// START DATE SCRIPT
+
+var showdate	= "yes"  	// SHOW THE DATE | yes | no |
+
+if (showdate == "yes") {
+document.write('<div id="date-location">');
+var d=new Date();
+var weekday=new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var monthname=new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+document.write('<span class="date-font">' + weekday[d.getDay()] + ', ');
+document.write(monthname[d.getMonth()] + ' ');
+document.write(d.getDate() + ', ');
+document.write(d.getFullYear())
+document.write('<br></span>')
+document.write('</div>');
+}
+</script>
+
+  <h1><a href="index.html"><img src="embed.png" alt="Offline Music"></a></h1>
+
+<p><FONT FACE="hp, arial">Harry Potter</p>
+
+<audio controls>
+  <source src="hp.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<a href="https://www.amazon.com/gp/aw/d/1338099132/ref=mp_s_a_1_1?ie=UTF8&qid=1474209351&sr=8-1&pi=SY200_QL40&keywords=harry+potter+and+the+cursed+child&dpPl=1&dpID=511zpEl8PYL&ref=plSrch" target="_blank"><img src="http://mbmfiles.com/Sep2016/160918-JguJBq-n0fnw.jpg" alt='Create your own banner at mybannermaker.com!' border=0 /></a><br><a href="http://mybannermaker.com/">
+
+  <footer id="foot01"></footer></FONT>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
