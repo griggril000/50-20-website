@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+        
+<head>
+  <title>Offline Music - Everything</title>
+  <link href="index.css" rel="stylesheet">
+
+<meta name="theme-color" content="#0000ff">
+
+<style>
+      body {
+        font-size: 25px;
+        text-shadow: 4px 4px 4px #aaa;
+      }
+</style>
+
+<style type="text/css">
+
+#date-location {left: 15px; top: 0px; text-align: center; background-color: #FFFFFF; border: 1px solid #006699; padding: 0px; z-index: 2; }
+
+.date-font {color: #006699; font: 13px arial, sans-serif; font-weight: bold; }
+
+</style>
+
+<style>
+
+@font-face {
+    font-family: harry_potter;
+    src: url(harry_potter.ttf);
+}
+
+@font-face {
+    font-family: RileysHandwriting;
+    src: url(RileysHandwriting.ttf);
+}
+
+h1 {
+    font-family: rocksalt;
+}
+
+p {
+    font-family: rocksalt;
+}
+
+ul#menu {
+    font-family: rocksalt;
+}
+
+.date-font {
+    font-family: rocksalt;
+}
+
+.harry_potter {
+    font-family: harry_potter;
+}
+
+</style>
+
+<link rel="icon"
+ href="music.ico" /></head>
+<body>
+
+<nav id="nav01"></nav>
+
+<div id="main">
+
+<script type="text/javascript">
+// START DATE SCRIPT
+
+var showdate	= "yes"  	// SHOW THE DATE | yes | no |
+
+if (showdate == "yes") {
+document.write('<div id="date-location">');
+var d=new Date();
+var weekday=new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var monthname=new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+document.write('<span class="date-font">' + weekday[d.getDay()] + ', ');
+document.write(monthname[d.getMonth()] + ' ');
+document.write(d.getDate() + ', ');
+document.write(d.getFullYear())
+document.write('<br></span>')
+document.write('</div>');
+}
+</script>
+
+  <h1><a href="index.html"><img src="embed.png" alt="Offline Music"></a></h1>
+
+<p>Everything Ad Free</p>
+
+<audio controls loop>
+  <source src="everythingadfree.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<p>Everything With Ads</p>
+
+<audio controls loop>
+  <source src="everythingwithads.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<p>Flute Music</p>
+
+<audio controls>
+  <source src="all_flute.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<p><FONT FACE="RileysHandwriting, arial">Star Wars Parodies</p>
+
+<audio controls>
+  <source src="hello_sw.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<p><FONT FACE="harry_potter, arial, rocksalt" font-size="50px">Half-Blood Prince</FONT></p>
+
+<audio controls>
+  <source src="ginny_harry.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<p><FONT FACE="harry_potter, rocksalt, arial">Goblet of Fire</FONT></p>
+
+<audio controls>
+  <source src="gof.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<p>Science Songs</p>
+
+<audio controls>
+  <source src="sci_wars.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<a href="http://rileysgamessite.getforge.io" target="_blank"><img src="http://mbmfiles.com/Sep2016/160918-NTX1oE84GVS3.png" alt='Create your own banner at mybannermaker.com!' border=0 /></a><br><a href="http://mybannermaker.com/">
+
+  <footer id="foot01"></footer></FONT>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
